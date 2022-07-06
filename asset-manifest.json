@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/distek-app/static/css/main.2e865cb6.css",
+    "main.js": "/distek-app/static/js/main.faeb8458.js",
+    "static/js/787.f43b336b.chunk.js": "/distek-app/static/js/787.f43b336b.chunk.js",
+    "static/media/main_gif.gif": "/distek-app/static/media/main_gif.89b314a8cf135b446874.gif",
+    "static/media/main_gif_tablet.gif": "/distek-app/static/media/main_gif_tablet.453169f44b552eeaa7c6.gif",
+    "static/media/cardGif_3.gif": "/distek-app/static/media/cardGif_3.e905f13b47eb223b9322.gif",
+    "static/media/card_one.png": "/distek-app/static/media/card_one.33138fe183a9128140cd.png",
+    "static/media/card__four.png": "/distek-app/static/media/card__four.8e09ac4f7b8dbcbba6ec.png",
+    "static/media/card_three.png": "/distek-app/static/media/card_three.2c78bba1c374745771e7.png",
+    "static/media/card_two.png": "/distek-app/static/media/card_two.7d7cec2d27094f0ca2e1.png",
+    "static/media/card__b.png": "/distek-app/static/media/card__b.92abc6afccf9fa50f71f.png",
+    "static/media/map.png": "/distek-app/static/media/map.1079bfbba496f9c8c21d.png",
+    "static/media/map_2.png": "/distek-app/static/media/map_2.ed06594903e8bf596434.png",
+    "index.html": "/distek-app/index.html",
+    "main.2e865cb6.css.map": "/distek-app/static/css/main.2e865cb6.css.map",
+    "main.faeb8458.js.map": "/distek-app/static/js/main.faeb8458.js.map",
+    "787.f43b336b.chunk.js.map": "/distek-app/static/js/787.f43b336b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e865cb6.css",
+    "static/js/main.faeb8458.js"
+  ]
+}
