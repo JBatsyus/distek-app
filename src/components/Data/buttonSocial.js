@@ -1,7 +1,7 @@
-import facebook from "../../assets/images/icons/facebook.png";
-import vkontakte from "../../assets/images/icons/vkontakte.png";
-import youtube from "../../assets/images/icons/youtube.png";
-import instagram from "../../assets/images/icons/instagram.png";
+import facebook from "../../assets/images/icons/facebook.svg";
+import vkontakte from "../../assets/images/icons/vkontakte.svg";
+import youtube from "../../assets/images/icons/youtube.svg";
+import instagram from "../../assets/images/icons/instagram.svg";
 
 export const icons = [
   {

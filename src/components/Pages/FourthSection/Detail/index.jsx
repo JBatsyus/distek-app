@@ -1,5 +1,5 @@
 import "./template.scss";
-import send from "../../../../assets/images/send.png";
+import send from "../../../../assets/images/send.svg";
 
 const Detail = ({ children }) => {
   return (

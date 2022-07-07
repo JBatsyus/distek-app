@@ -1,6 +1,5 @@
 import "./template.scss";
-import arrow from "../../assets//images/icons/arrow.png";
-
+import arrow from "../../assets/images/icons/arrow.svg";
 const NavHeader = props => {
   const { href, text } = props;
   return (

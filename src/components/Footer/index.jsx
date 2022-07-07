@@ -2,13 +2,13 @@ import "./template.scss";
 import ButtonOne from "../Buttons/ButtonOne.jsx";
 import ButtonSocial from "../Buttons/ButtonSocial.jsx";
 import { icons } from "../Data/buttonSocial.js";
-import sagirov from "../../assets/images/sagirov.png";
-import arrowUp from "../../assets/images/icons/arrowUp.png";
+import sagirov from "../../assets/images/sagirov.svg";
+import arrowUp from "../../assets/images/icons/arrowUp.svg";
 import Subscription from "../Subscription/index.jsx";
 import NavFooter from "./NavFooter/index.jsx";
 import { items } from "../Data/itemsFooter.js";
-import arrowRight from "../../assets/images/icons/arrowRight.png";
-import logo from "../../assets//images/logo.png";
+import arrowRight from "../../assets/images/icons/arrowRight.svg";
+import logo from "../../assets/images/logo.svg";
 const Footer = () => {
   return (
     <footer>

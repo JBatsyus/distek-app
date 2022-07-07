@@ -1,7 +1,7 @@
-import arrow_navi_right from "../../assets/images/arrow_navi_right.png";
-import link from "../../assets/images/link.png";
-import tekla from "../../assets/images/tekla.png";
-import trimble from "../../assets/images/trimble.png";
+import arrow_navi_right from "../../assets/images/icons/arrow_navi_right.svg";
+import link from "../../assets/images/icons/link.svg";
+import tekla from "../../assets/images/icons/tekla.svg";
+import trimble from "../../assets/images/icons/trimble.svg";
 
 export const navi = [
   {

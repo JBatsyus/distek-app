@@ -1,4 +1,4 @@
-import arrowRight from "../../assets/images/icons/arrowRight.png";
+import arrowRight from "../../assets/images/icons/arrowRight.svg";
 
 export const items = [
   {

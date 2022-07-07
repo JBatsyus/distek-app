@@ -1,7 +1,7 @@
 import "./template.scss";
-import two from "../../../../assets/images/two.png";
-import btn_sectionone from "../../../../assets/images/btn_sectionone.png";
-import arrow_btn_main from "../../../../assets/images/arrow_btn_main.png";
+import two from "../../../../assets/images/two.svg";
+import btn_sectionone from "../../../../assets/images/btn_sectionone.svg";
+import arrow_btn_main from "../../../../assets/images/arrow_btn_main.svg";
 const CardGradient = () => {
   return (
     <div className="card__box">

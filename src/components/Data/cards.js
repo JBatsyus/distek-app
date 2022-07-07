@@ -1,7 +1,7 @@
-import card_one from "../../assets/images/card_one.png";
-import card_two from "../../assets/images/card_two.png";
-import card_three from "../../assets/images/card_three.png";
-import card__four from "../../assets/images/card__four.png";
+import card_one from "../../assets/images/card_one.webp";
+import card_two from "../../assets/images/card_two.webp";
+import card_three from "../../assets/images/card_three.webp";
+import card__four from "../../assets/images/card__four.webp";
 
 export const cards = [
   {

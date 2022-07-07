@@ -1,4 +1,4 @@
-import logo from "../../assets//images/logo.png";
+import logo from "../../assets//images/logo.svg";
 import "./template.scss";
 import ButtonOne from "../Buttons/ButtonOne.jsx";
 import NavHeader from "../NavHeader/index.jsx";

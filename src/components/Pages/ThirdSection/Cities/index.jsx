@@ -1,5 +1,5 @@
 import "./template.scss";
-import check_tp from "../../../../assets/images/check_tp.png";
+import check_tp from "../../../../assets/images/check_tp.svg";
 
 const Cities = ({ city }) => {
   return (

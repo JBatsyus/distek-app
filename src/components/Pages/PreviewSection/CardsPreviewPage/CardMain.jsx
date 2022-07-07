@@ -1,8 +1,8 @@
 import "./template.scss";
-import one from "../../../../assets/images/one.png";
+import one from "../../../../assets/images/one.svg";
 import main_gif from "../../../../assets/images/main_gif.gif";
 import main_gif_tablet from "../../../../assets/images/main_gif_tablet.gif";
-import email from "../../../../assets/images/email.png";
+import email from "../../../../assets/images/email.svg";
 import Accordion from "../../../Accordion/index.jsx";
 import { items } from "../../../Data/accordion.js";
 

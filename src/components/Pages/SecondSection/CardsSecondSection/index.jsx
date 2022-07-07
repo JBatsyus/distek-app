@@ -1,6 +1,6 @@
 import "./template.scss";
 
-import check from "../../../../assets/images/check.png";
+import check from "../../../../assets/images/check.svg";
 import NavBody from "../../../NavBody/index.jsx";
 
 const CardSecondSection = props => {

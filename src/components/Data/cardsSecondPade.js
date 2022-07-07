@@ -1,13 +1,13 @@
-import one from "../../assets/images/one.png";
-import two from "../../assets/images/two.png";
-import three from "../../assets/images/three.png";
+import one from "../../assets/images/one.svg";
+import two from "../../assets/images/two.svg";
+import three from "../../assets/images/three.svg";
 
 import main_gif_tablet from "../../assets/images/main_gif_tablet.gif";
 import cardGif_3 from "../../assets/images/cardGif_3.gif";
-import arrow_navi_right from "../../assets/images/arrow_navi_right.png";
-import link from "../../assets/images/link.png";
-import tekla from "../../assets/images/tekla.png";
-import trimble from "../../assets/images/trimble.png";
+import arrow_navi_right from "../../assets/images/icons/arrow_navi_right.svg";
+import link from "../../assets/images/icons/link.svg";
+import tekla from "../../assets/images/icons/tekla.svg";
+import trimble from "../../assets/images/icons/trimble.svg";
 
 export const cardsContent = [
   {
