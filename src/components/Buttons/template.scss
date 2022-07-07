@@ -47,6 +47,10 @@
   margin-left: 5px;
   margin-right: 5px;
   @include reset_style_btn();
+  .btns__wrap {
+    width: 24px;
+    height: auto;
+  }
 }
 
 /*------------ADAPTIVE VERSION FOR TABLET(START)------------*/
