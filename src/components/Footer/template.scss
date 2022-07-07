@@ -23,23 +23,25 @@ footer {
         @include text_style("Roboto", 500, 16px, 1, $gray);
         font-variant: small-caps;
         padding-top: 19px;
+        .br {
+          display: none;
+        }
       }
     }
 
     .col-2 {
       display: flex;
       flex-direction: row;
+      margin-top: 3px;
       // justify-content: space-around;
 
       .footer__nav {
         margin-right: 130px;
-        .h3 {
+        .hf {
           display: flex;
           gap: 7px;
-          font-size: 20px;
-          line-height: 0.9;
-          color: $primary;
-          text-align: left;
+          font-variant: small-caps;
+          @include text_style("Roboto", 500, 20px, 0.9, $primary);
         }
 
         .items__wrap {
@@ -151,12 +153,19 @@ footer {
     padding: 20px 20px 30px 20px;
     display: grid;
     grid-template-columns: 50% 50%;
+    .col-1 {
+      .text-logo {
+        .br {
+          display: block;
+        }
+      }
+    }
 
     .col-2 {
       flex-direction: column;
 
       .pad {
-        margin-top: 50px;
+        margin-top: 87px;
       }
     }
 
@@ -165,7 +174,9 @@ footer {
       grid-column: 1/3;
     }
   }
-
+  footer .footer__wrap .col-2 .footer__nav {
+    margin-right: 0px;
+  }
   footer .footer__contacts {
     display: flex;
     flex-wrap: wrap;

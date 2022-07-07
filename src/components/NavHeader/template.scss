@@ -2,16 +2,18 @@
 @import "../../assets/styles/mixins.scss";
 
 .nav__item {
-  @include text_style("Roboto", 500, 20px, 0.9, $primary);
+  @include text_style("Roboto", 500, 20px, 0.85, $primary);
   text-decoration: none;
   font-variant: small-caps;
-  text-transform: uppercase;
+
   // outline: 1px solid #1f9491;
   margin-left: 80px;
   display: flex;
 }
 .img {
+  height: 14px;
   padding-left: 7px;
+  margin-top: 3px;
 }
 
 /*------------ADAPTIVE VERSION (START)------------*/

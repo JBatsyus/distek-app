@@ -16,12 +16,12 @@ const Footer = () => {
         <div className="col-1">
           <img className="header__logo" src={logo} alt={"logo"} />
           <div className="text-logo">
-            ооо «дистек» <br /> все права защищены
+            ооо «дистек». <br className="br" /> все права защищены
           </div>
         </div>
         <div className="col-2">
           <div className="footer__nav">
-            <div className="h3">
+            <div className="hf">
               программное обеспечение{" "}
               <img className="arrowUp" src={arrowUp} alt={"arrowUp"} />
             </div>
@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer__nav pad">
-            <div className="h3">
+            <div className="hf">
               о нас <img className="arrowUp" src={arrowUp} alt={"arrowUp"} />
             </div>
             <div className="items__wrap">
