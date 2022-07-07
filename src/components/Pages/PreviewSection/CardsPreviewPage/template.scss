@@ -38,7 +38,7 @@
     }
 
     .header-right p {
-      @include text_style("Montserrat", 600, 28px, 1, $primary);
+      @include text_style("Montserrat", 600, 28px, 1.06, $primary);
 
       text-align: left;
       text-transform: lowercase;
@@ -320,7 +320,7 @@
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
     p {
-      @include text_style("Montserrat", 600, 25px, 0.9, $primary);
+      @include text_style("Montserrat", 600, 26px, 1.1, $primary);
     }
   }
 
@@ -339,7 +339,7 @@
   }
 
   .card__box .card__body .card__content span {
-    padding-bottom: 5px;
+    padding-bottom: 8px;
   }
 
   .card__box .card__body .card__btn-adptv {
@@ -385,10 +385,11 @@
     border-top-left-radius: 16px;
 
     p {
-      @include text_style("Montserrat", 600, 25px, 0.9, $primary);
+      @include text_style("Montserrat", 600, 25px, 1.06, $primary);
     }
 
     div {
+      margin-top: 6px;
       gap: 13px;
       display: flex;
     }
@@ -416,7 +417,7 @@
     width: 367px;
     height: 301px;
     display: block;
-    margin: 39px auto 80px auto;
+    margin: 57px auto 80px auto;
 
     img {
       width: 100%;
@@ -591,6 +592,7 @@
   .card__box .card__body .card__btn-adptv button {
     display: block;
     padding-right: 28px;
+    padding-bottom: 5px;
     @include reset_cardGradient_btn();
   }
 

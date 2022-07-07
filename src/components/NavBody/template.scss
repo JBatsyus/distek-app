@@ -4,9 +4,9 @@
 .nv__body {
   display: flex;
   align-items: center;
-  margin-right: 55px;
+  margin-right: 58px;
   white-space: nowrap;
-  // outline: 1px solid #1f9491;
+
   .nv__body img {
     min-width: 49px;
     min-height: 28px;
@@ -17,16 +17,17 @@
     font-variant: small-caps;
     text-decoration: none;
     padding-left: 10px;
+    display: flex;
   }
   .link img {
-    padding-left: 7px;
+    padding-left: 10px;
   }
 }
 
 /*------------ADAPTIVE VERSION (START)------------*/
 @media screen and (min-width: 1200px) and (max-width: 1439px) {
   .nv__body {
-    margin-right: 50px;
+    margin-right: 40px;
   }
 }
 /*------------ADAPTIVE VERSION FOR TABLET(START)------------*/
@@ -42,14 +43,13 @@
     height: 24px;
   }
   .nv__body .link {
-    display: flex;
     padding-left: 8px;
     @include text_style("Roboto", 500, 16px, 0.9, $blue);
   }
   .nv__body .link img {
-    width: 16px;
     height: 16px;
     object-fit: contain;
+    padding-left: 0px;
   }
 }
 
@@ -70,9 +70,9 @@
     @include text_style("Roboto", 500, 16px, 0.9, $blue);
   }
   .nv__body .link img {
-    width: 16px;
     height: 16px;
     object-fit: contain;
+    padding-left: 0px;
   }
 }
 /*------------ADAPTIVE VERSION FOR MOBILE DEVICES(END)------------*/

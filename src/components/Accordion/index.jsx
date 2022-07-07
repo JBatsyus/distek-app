@@ -1,7 +1,8 @@
 import "./template.scss";
 
 import React, { useState } from "react";
-
+// import + from "../../assets/images/+.svg";
+// import - from "../../assets/images/-.svg";
 const Accordion = ({ items }) => {
   const [selected, setSelected] = useState(null);
 
@@ -22,7 +23,11 @@ const Accordion = ({ items }) => {
                 <div className="accordion-number">{item.number}</div>
                 <div className="accordion-h">{item.title}</div>
               </div>
-              <div className="accordion-btn">{selected == i ? "-" : "+"}</div>
+              <div
+                className={
+                  selected == i ? "accordion-btn minus" : "accordion-btn plus"
+                }
+              ></div>
             </div>
 
             <div
