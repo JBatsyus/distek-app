@@ -9,9 +9,9 @@
 
   background-color: $white;
   border-radius: 10px;
-  padding: 10px 20px 10px 10px;
+  padding: 10px 10px 10px 20px;
   .text {
-    @include text_style("Roboto", 500, 15px, 1, $gray_two);
+    @include text_style("Roboto", 500, 15px, 1.06, $gray_two);
   }
   .send {
     @include reset_style_btn();

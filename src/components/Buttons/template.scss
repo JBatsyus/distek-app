@@ -35,7 +35,7 @@
   background-color: transparent;
   background-color: $body;
   border-radius: 10px;
-  @include text_style("Roboto", 500, 15px, 0.9, $gray_two);
+  @include text_style("Roboto", 500, 16px, 0.92, $gray_two);
   outline: none;
   cursor: pointer;
 }

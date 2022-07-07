@@ -68,7 +68,7 @@
           flex-direction: column;
 
           .card__text {
-            @include text_style("Roboto", 400, 18px, 0.9, $white);
+            @include text_style("Roboto", 400, 18px, 1.2, $white);
 
             height: 70px;
             margin-bottom: 35px;
@@ -104,14 +104,14 @@
     width: 49%;
 
     .card__bgi .border__wrap .card__body {
-      height: 30vw;
+      height: 61vw;
       padding: 20px;
 
       .content .card__text {
-        @include text_style("Roboto", 400, 16px, 1.03, $white);
+        @include text_style("Roboto", 400, 16px, 1.3, $white);
 
         height: 84px;
-        margin-bottom: 30px;
+        margin-bottom: 37px;
         text-align: left;
       }
     }
@@ -128,6 +128,9 @@
     .card__bgi .border__wrap .card__body {
       height: 69vw;
       padding: 20px;
+      .content .card__text {
+        margin-bottom: 30px;
+      }
     }
   }
 }

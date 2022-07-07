@@ -26,10 +26,10 @@
         margin-bottom: 15px;
       }
       .title__bottom {
-        @include text_style("Roboto", 400, 18px, 1.02, $gray);
+        @include text_style("Roboto", 400, 18px, 1.2, $gray);
 
         font-variant: small-caps;
-        max-width: 350px;
+        max-width: 360px;
       }
     }
     .fourthPage__title-right {

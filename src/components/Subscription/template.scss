@@ -10,7 +10,7 @@
   text-align: left;
 
   .h4 {
-    @include text_style("Montserrat", 600, 20px, 1, $gray_two);
+    @include text_style("Montserrat", 600, 20px, 1.06, $gray_two);
 
     text-transform: lowercase;
     text-align: left;
@@ -24,7 +24,7 @@
     .news {
       width: 100%;
 
-      padding: 16px 20px;
+      padding: 16px 10px 20px 20px;
       border: 1px solid $gray_input;
       border-radius: 10px;
 
@@ -49,8 +49,9 @@
       align-items: center;
 
       p {
-        @include text_style("Montserrat", 500, 15px, 1, $gray_two);
+        @include text_style("Montserrat", 500, 15px, 1.06, $gray_two);
         margin-right: 12px;
+        padding-bottom: 2px;
       }
 
       button {
@@ -61,7 +62,7 @@
   }
 
   .agreement {
-    @include text_style("Roboto", 400, 12px, 1, $gray_two);
+    @include text_style("Roboto", 400, 12px, 1.4, $gray_two);
 
     text-transform: lowercase;
     text-align: left;
