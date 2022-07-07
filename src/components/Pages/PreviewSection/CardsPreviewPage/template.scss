@@ -1,0 +1,650 @@
+@import "../../../../assets/styles/variables.scss";
+@import "../../../../assets/styles/mixins.scss";
+
+.card__box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .card__header {
+    display: flex;
+    background-color: $white;
+    border-top-right-radius: 20px;
+    background-color: transparent;
+
+    .header-left {
+      padding: 38px 40px;
+      background-color: $body;
+      position: relative;
+    }
+
+    .header-left:before {
+      @include card_corner();
+      @include card_corner_before();
+    }
+
+    .header-left:after {
+      @include card_corner();
+      @include card_corner_after();
+    }
+
+    .header-right {
+      background-color: $white;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      padding: 26px 0px 0px 40px;
+
+      width: 100%;
+    }
+
+    .header-right p {
+      @include text_style("Montserrat", 600, 28px, 1, $primary);
+
+      text-align: left;
+      text-transform: lowercase;
+      margin: 0px;
+    }
+  }
+
+  .card__body {
+    padding: 54px 30px 31px 40px;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    background-color: $white;
+
+    display: flex;
+    flex-direction: row;
+
+    background-image: url("../../../../assets/images/card__b.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 0px;
+    height: 100%;
+
+    .card__btn button {
+      padding-right: 70px;
+    }
+
+    .card__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: left;
+      width: 100%;
+      min-width: 200px;
+    }
+
+    .card__content p {
+      @include text_style("Roboto", 400, 18px, 1.02, $primary);
+      margin-top: 0;
+    }
+
+    .card__content span {
+      @include text_style("Roboto", 400, 15px, 1, $blue);
+
+      padding-bottom: 10px;
+      white-space: normal;
+    }
+  }
+
+  .card__btn-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .card__btn-screen button {
+    padding-right: 70px;
+    @include reset_cardGradient_btn();
+  }
+
+  .card__btn-adptv button {
+    display: none;
+  }
+}
+
+// CardMain
+.cardMain__box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  .cardMain__header {
+    display: flex;
+    background-color: $white;
+    border-top-right-radius: 20px;
+    background-color: transparent;
+
+    .headerMain-left {
+      padding: 38px 40px;
+      background-color: $body;
+      position: relative;
+    }
+
+    .headerMain-left:before {
+      @include card_corner();
+
+      @include card_corner_before();
+    }
+
+    .headerMain-left:after {
+      @include card_corner();
+      @include card_corner_after();
+    }
+
+    .headerMain-right {
+      background-color: $white;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      width: 100%;
+      padding: 26px 0px 0px 40px;
+    }
+
+    .headerMain-right p {
+      @include text_style("Montserrat", 600, 28px, 1, $primary);
+      margin: 0px;
+      text-transform: lowercase;
+      z-index: 99;
+    }
+
+    .headerMain-right div {
+      @include text_style("Roboto", 500, 16px, 0.9, $blue);
+
+      display: flex;
+      gap: 13px;
+      font-variant: small-caps;
+      z-index: 99;
+    }
+  }
+
+  .cardMain__body {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 59px 10px 40px;
+    height: 100%;
+
+    width: 100%;
+
+    position: relative;
+
+    .block_info {
+      display: none;
+    }
+  }
+
+  .cardMain__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    width: 50%;
+    z-index: 80;
+  }
+
+  .cardMain__content p {
+    @include text_style("Roboto", 500, 16px, 1, $gray);
+    text-align: left;
+    font-variant: small-caps; // eslint-disable-next-line
+
+    margin-bottom: 39px;
+  }
+
+  .gif {
+    width: 65%;
+    height: 100%;
+
+    position: absolute;
+    right: 59px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    z-index: 10;
+
+    img {
+      width: 37vw;
+
+      height: 31vw;
+
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+}
+
+.gif-tablet {
+  display: none;
+}
+
+// .cardMain__box::after {
+//   content: "";
+//   background-image: url("../../../assets/images/main_gif.gif");
+//   background-repeat: no-repeat;
+//   background-position-x: 100%;
+//   z-index: 60;
+//   position: absolute;
+//   width: 62%;
+//   height: 100%;
+//   z-index: 70;
+//   background-size: 60%;
+//   background-position-y: 20%;
+//   // background-size: 36%;
+//   // background-position-y: -4%;
+// }
+
+// .cardMain__body:hover {
+//   z-index: 99;
+//   background-image: url("../../../assets/images/card_main_b.png");
+//   background-repeat: no-repeat;
+// }
+
+/*------------ADAPTIVE VERSION (START)------------*/
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .cardMain__box .cardMain__content {
+    width: 64%;
+  }
+
+  .cardMain__box .gif {
+    right: 1px;
+  }
+
+  .cardMain__box .cardMain__body {
+    padding: 0px 59px 0px 35px;
+  }
+
+  .gif-tablet {
+    display: none;
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR TABLET(START)------------*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .screen__wrap .screen__title {
+    padding: 20px 11px 3px 17px;
+
+    .title-up {
+      flex-direction: column;
+
+      .title__left {
+        @include text_style("Montserrat", 600, 40px, 0.9, $primary);
+        max-width: 640px;
+        margin-bottom: 13px;
+      }
+
+      .title__right {
+        max-width: 300px;
+        text-align: left;
+        margin: 0px 0px 81px 0px;
+      }
+    }
+
+    .navi {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  .card__box .card__header {
+    border-radius: 16px;
+  }
+  .card__box .card__header .header-left {
+    padding: 20px 20px;
+  }
+  .card__box .card__header .header-left::before {
+    height: 16px;
+    border-top-left-radius: 16px;
+  }
+  .card__box .card__header .header-left::after {
+    height: 16px;
+
+    border-bottom-right-radius: 16px;
+  }
+
+  .screen__wrap .screen__content .card__box .card__header .header-right {
+    padding: 11px 20px 0 38px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    p {
+      @include text_style("Montserrat", 600, 25px, 0.9, $primary);
+    }
+  }
+
+  .card__box .card__body {
+    padding: 0px 20px 30px 20px;
+
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .card__box .card__body .card__content {
+    padding-top: 19px;
+    width: 100%;
+    max-width: 77%;
+  }
+
+  .card__box .card__body .card__content span {
+    padding-bottom: 5px;
+  }
+
+  .card__box .card__body .card__btn-adptv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .card__box .card__body .card__btn-adptv button {
+    display: block;
+    padding-right: 60px;
+    @include reset_cardGradient_btn();
+  }
+
+  .card__box .card__body .card__btn-screen button {
+    display: none;
+  }
+
+  .cardMain__box .cardMain__header {
+    border-radius: 16px;
+  }
+  .cardMain__box .cardMain__header .headerMain-left {
+    padding: 20px 20px;
+  }
+  .cardMain__box .cardMain__header .headerMain-left::before {
+    height: 16px;
+    border-top-left-radius: 16px;
+  }
+  .cardMain__box .cardMain__header .headerMain-left::after {
+    height: 16px;
+
+    border-bottom-right-radius: 16px;
+  }
+
+  .screen__wrap
+    .screen__content
+    .cardMain__box
+    .cardMain__header
+    .headerMain-right {
+    flex-direction: row;
+    padding: 11px 20px 0 38px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+
+    p {
+      @include text_style("Montserrat", 600, 25px, 0.9, $primary);
+    }
+
+    div {
+      gap: 13px;
+      display: flex;
+    }
+  }
+
+  .cardMain__box .cardMain__body {
+    padding: 0px 20px 30px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .cardMain__box .cardMain__content {
+    width: 100%;
+  }
+
+  .cardMain__box .gif {
+    display: none;
+  }
+
+  .cardMain__box .gif-tablet {
+    width: 367px;
+    height: 301px;
+    display: block;
+    margin: 39px auto 80px auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR TABLET(END)------------*/
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(START)------------*/
+@media (max-width: 767px) {
+  .screen__wrap .screen__title {
+    padding: 10px 10px 1px 10px;
+
+    .title-up {
+      flex-direction: column;
+
+      .title__left {
+        @include text_style("Montserrat", 600, 27px, 0.9, $primary);
+        max-width: 350px;
+        margin-bottom: 15px;
+      }
+
+      .title__right {
+        @include text_style("Roboto", 500, 15px, 0.9, $gray);
+        max-width: 300px;
+        text-align: left;
+        margin: 0px 0px 80px 0px;
+      }
+    }
+  }
+  .card__box .card__header {
+    border-radius: 8px;
+  }
+  .cardMain__box .cardMain__header .headerMain-left {
+    padding: 15px 15px;
+
+    img {
+      height: 15px;
+      width: 17px;
+    }
+  }
+  .cardMain__box .cardMain__header .headerMain-left::before {
+    height: 8px;
+    border-top-left-radius: 8px;
+  }
+  .cardMain__box .cardMain__header .headerMain-left::after {
+    height: 8px;
+
+    border-bottom-right-radius: 8px;
+  }
+
+  .screen__wrap
+    .screen__content
+    .cardMain__box
+    .cardMain__header
+    .headerMain-right {
+    flex-direction: column;
+    padding: 10px 0px 0 15px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+    p {
+      @include text_style("Montserrat", 600, 20px, 0.9, $primary);
+      text-align: left;
+      white-space: nowrap;
+
+      @media (max-width: 350px) {
+        white-space: normal;
+      }
+    }
+
+    div {
+      display: none;
+    }
+  }
+
+  .screen__wrap .screen__content .cardMain__box .cardMain__body {
+    padding: 0px 10px 0px 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    .block_info {
+      order: 1;
+      margin: auto auto 76px 55px;
+      @include text_style("Roboto", 500, 16px, 0.9, $blue);
+
+      display: flex;
+      gap: 13px;
+      font-variant: small-caps;
+      z-index: 99;
+    }
+  }
+
+  .screen__wrap .screen__content .cardMain__box .cardMain__body .gif-tablet {
+    width: 349px;
+    height: 286px;
+    display: block;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .card__box .card__header .header-left {
+    padding: 15px 15px;
+
+    img {
+      height: 15px;
+      width: 17px;
+    }
+  }
+  .card__box .card__header .header-left::before {
+    height: 8px;
+    border-top-left-radius: 8px;
+  }
+  .card__box .card__header .header-left::after {
+    height: 8px;
+
+    border-bottom-right-radius: 8px;
+  }
+
+  .screen__wrap .screen__content .card__box .card__header .header-right {
+    padding: 10px 38px 0 15px;
+    border-radius: 8px;
+
+    p {
+      @include text_style("Montserrat", 600, 20px, 0.9, $primary);
+    }
+  }
+
+  .card__box .card__body {
+    padding: 0px 10px 30px 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card__box .card__body .card__content {
+    padding-top: 32px;
+  }
+
+  .card__box .card__body .card__content span {
+    padding-bottom: 0px;
+  }
+
+  .card__box .card__body .card__content p {
+    font-size: 15px;
+    max-width: 252px;
+  }
+
+  .card__box .card__body .card__btn button {
+    padding-right: 25px;
+  }
+
+  .card__box .card__body .card__content span {
+    line-height: 1;
+    white-space: normal;
+    max-width: 200px;
+  }
+
+  .card__box .card__body .card__btn-adptv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .card__box .card__body .card__btn-adptv button {
+    display: block;
+    padding-right: 28px;
+    @include reset_cardGradient_btn();
+  }
+
+  .card__box .card__body .card__btn-screen button {
+    display: none;
+  }
+
+  .cardMain__box .cardMain__body {
+    padding: 76px 10px 30px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .cardMain__box .cardMain__content {
+    width: 100%;
+  }
+
+  .cardMain__box .cardMain__content p {
+    margin-top: 56px;
+  }
+
+  .cardMain__box .gif {
+    display: none;
+  }
+
+  .cardMain__box .gif-tablet {
+    width: 100%;
+    height: 50%;
+
+    display: block;
+  }
+
+  .cardMain__box .gif-tablet img {
+    width: 95%;
+  }
+}
+
+@media (max-width: 414px) {
+  .screen__wrap
+    .screen__content
+    .cardMain__box
+    .cardMain__header
+    .headerMain-right
+    p {
+    @include text_style("Montserrat", 600, 16px, 1, $primary);
+    padding-bottom: 2px;
+  }
+
+  .screen__wrap .screen__content .cardMain__box .cardMain__body .gif-tablet {
+    width: auto;
+    height: 286px;
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(END)------------*/
+/*------------ADAPTIVE VERSION(END)------------*/

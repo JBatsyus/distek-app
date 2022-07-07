@@ -1,0 +1,50 @@
+@import "../../../../assets/styles/variables.scss";
+@import "../../../../assets/styles/mixins.scss";
+
+.city__content {
+  display: flex;
+  flex-direction: row;
+  @include text_style("Roboto", 400, 18px, 1.02, $primary);
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 0;
+  .city__items {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+
+    img {
+      margin-right: 20px;
+    }
+
+    div {
+      margin-bottom: 6px;
+    }
+  }
+}
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(START)------------*/
+@media (max-width: 767px) {
+  .city__content {
+    @include text_style("Roboto", 400, 14px, 1, $primary);
+    display: flex;
+    flex-direction: column;
+
+    width: 48%;
+
+    margin-right: 0;
+    .city__items {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+
+      div {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(END)------------*/

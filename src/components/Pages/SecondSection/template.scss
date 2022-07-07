@@ -1,0 +1,81 @@
+@import "../../../assets/styles/variables.scss";
+@import "../../../assets/styles/mixins.scss";
+
+.secondPage__wrap {
+  height: auto;
+  margin-bottom: 50px;
+}
+.screen__wrap {
+  background-color: $body;
+}
+.secondPage__title {
+  background: $white;
+  border-radius: 20px;
+  padding: 25px 40px 117px 40px;
+}
+.secondPage__title-up {
+  @include text_style("Montserrat", 600, 40px, 0.9, $primary);
+  letter-spacing: -0.01em;
+  text-align: left;
+  max-width: 840px;
+}
+.container__sp {
+  margin-top: 15px;
+  gap: 13px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+/*------------ADAPTIVE VERSION (START)------------*/
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .container__sp {
+    grid-template-columns: repeat(3, 33%);
+    gap: 5px;
+  }
+  .container__sp .card__headerSp .header-rightSp {
+    padding: 26px 0px 0px 20px;
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR TABLET(START)------------*/
+@media (max-width: 1199px) {
+  .secondPage__wrap {
+    height: auto;
+    margin-bottom: 70px;
+
+    .secondPage__title {
+      padding: 20px 40px 60px 20px;
+      border-radius: 16px;
+      .secondPage__title-up {
+        @include text_style("Montserrat", 600, 32px, 0.9, $primary);
+      }
+    }
+  }
+  .secondPage__wrap .container__sp {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR TABLET(END)------------*/
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(START)------------*/
+@media (max-width: 767px) {
+  .secondPage__wrap .secondPage__title {
+    border-radius: 8px;
+    padding: 10px 10px 50px 8px;
+    .secondPage__title-up {
+      @include text_style("Montserrat", 600, 23px, 0.9, $primary);
+      letter-spacing: -0.01em;
+      text-align: left;
+      max-width: 840px;
+    }
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(END)------------*/
+/*------------ADAPTIVE VERSION(END)------------*/

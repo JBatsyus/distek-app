@@ -1,0 +1,21 @@
+@import "../../../assets/styles/variables.scss";
+@import "../../../assets/styles/mixins.scss";
+
+.nv__footer {
+  font-variant: small-caps;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  .nv__body img {
+    min-width: 20px;
+    min-height: 20px;
+  }
+  .link {
+    @include text_style("Montserrat", 400, 18px, 1, $primary);
+    font-variant: small-caps;
+    text-decoration: none;
+  }
+  .link img {
+    padding-left: 7px;
+  }
+}

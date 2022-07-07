@@ -1,0 +1,40 @@
+@import "../../../../assets/styles/variables.scss";
+@import "../../../../assets/styles/mixins.scss";
+
+.datail__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $white;
+  border-radius: 10px;
+  padding: 10px 20px 10px 10px;
+  .text {
+    @include text_style("Roboto", 500, 15px, 1, $gray_two);
+  }
+  .send {
+    @include reset_style_btn();
+    background-color: transparent;
+  }
+}
+
+/*------------ADAPTIVE VERSION (START)------------*/
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+}
+
+/*------------ADAPTIVE VERSION FOR TABLET(START)------------*/
+@media (max-width: 1199px) {
+  .datail__box {
+    padding: 10px;
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR TABLET(END)------------*/
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(START)------------*/
+@media (max-width: 767px) {
+}
+
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(END)------------*/
+/*------------ADAPTIVE VERSION(END)------------*/

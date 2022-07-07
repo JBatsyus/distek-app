@@ -1,0 +1,124 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.accordion-item {
+  width: 100%;
+  // .acc__body {
+  //   height: 0;
+  //   overflow: hidden;
+  //   transition: height 0.4s ease-in-out;
+  // }
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  border-top: 1px solid $gray_input;
+  border-top-right-radius: 20px;
+
+  margin-bottom: 20px;
+  padding-top: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.title-box {
+  display: flex;
+}
+.accordion-number {
+  @include text_style("Montserrat", 700, 8px, 1.1, $primary);
+
+  text-transform: uppercase;
+  padding-right: 18px;
+}
+.accordion-h {
+  display: flex;
+  @include text_style("Roboto", 500, 18px, 1.1, $primary);
+  font-variant: small-caps;
+  text-decoration: none;
+  align-items: flex-end;
+}
+.accordion-btn {
+  height: 16px;
+  width: 16px;
+  outline: 1px solid $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 18px;
+}
+
+.accordion-content {
+  padding-left: 45%;
+  @include text_style("Roboto", 500, 15px, 1.1, $primary);
+
+  // visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  height: 0;
+
+  transition: all 0.4s linear;
+  text-align: left;
+}
+.accordion-content.active {
+  visibility: visible;
+  height: 15px;
+  margin-top: -17px;
+  margin-bottom: 10px;
+  overflow: none;
+}
+
+/*------------ADAPTIVE VERSION (START)------------*/
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .accordion-number {
+    padding-right: 9px;
+  }
+}
+/*------------ADAPTIVE VERSION FOR TABLET(START)------------*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrapper {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+  .accordion-item {
+    width: 48%;
+    margin-right: 0;
+  }
+  .title-box {
+    text-align: left;
+  }
+  .accordion-number {
+    padding-right: 7px;
+  }
+  .accordion-title {
+    white-space: normal;
+  }
+}
+/*------------ADAPTIVE VERSION FOR TABLET(END)------------*/
+
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(START)------------*/
+@media (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+  .title-box {
+    text-align: left;
+  }
+  .accordion-number {
+    padding-right: 7px;
+  }
+  .accordion-title {
+    white-space: normal;
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(END)------------*/
+
+/*------------ADAPTIVE VERSION (END)------------*/

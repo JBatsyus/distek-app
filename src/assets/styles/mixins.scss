@@ -1,0 +1,84 @@
+@import "./variables.scss";
+
+// центр грид
+
+@mixin grid_centr {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+// стили текста
+@mixin text_style($ff, $fw, $fs, $lh, $color) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $color;
+}
+// сброс стилей кнопки
+@mixin reset_style_btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@mixin reset_cardGradient_btn {
+  background: transparent;
+  cursor: pointer;
+  border: 0;
+}
+@mixin btn_gradient {
+  background: linear-gradient(
+    50.48deg,
+    $blue1 -33.78%,
+    $blue2 6.62%,
+    $blue3 47.26%,
+    $blue4 79.73%,
+    $blue5 111.74%
+  );
+}
+
+// псевдоэлементы для карточек
+@mixin card_corner {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+}
+@mixin card_corner_before {
+  border-top: 5px solid $white;
+  border-left: 5px solid $white;
+  border-top-left-radius: 20px;
+
+  left: 0;
+  bottom: -25px;
+}
+@mixin card_corner_after {
+  border-bottom: 5px solid $white;
+  border-right: 5px solid $white;
+  border-bottom-right-radius: 20px;
+  right: -4.5px;
+  bottom: -5px;
+}
+
+@mixin border_radius_left_top {
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top: 0.5px;
+  border-left: 0.5px;
+  align-items: flex-start;
+  -webkit-box-shadow: -10px -8px 0px -1px $body;
+  -moz-box-shadow: -10px -8px 0px -1px $body;
+  box-shadow: -10px -8px 0px -1px $body;
+}
+// затемнение фона  у карточек 4-й секции
+@mixin background-color-text {
+  background: linear-gradient(
+    0deg,
+    rgba(32, 32, 32, 0.8) 0%,
+    rgba(32, 32, 32, 0.705786) 63.2%,
+    rgba(32, 32, 32, 0) 100%
+  );
+}

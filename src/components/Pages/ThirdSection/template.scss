@@ -1,0 +1,232 @@
+@import "../../../assets/styles/variables.scss";
+@import "../../../assets/styles/mixins.scss";
+
+.thirdPage__wrap {
+  // height: auto;
+  height: 100vh;
+  margin-bottom: 50px;
+
+  border-radius: 20px;
+  padding: 40px;
+  background-color: $white;
+  background-image: url("../../../assets/images/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center; //смещать или не смещать фон при изменении экрана?
+
+  .content__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32%;
+    height: 100%;
+
+    .thirdPage__content {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      .thirdPage__title {
+        @include text_style("Montserrat", 600, 45px, 1.02, $primary);
+
+        max-width: 750px;
+        padding-bottom: 60px;
+      }
+
+      .cities {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+
+    .thirdPage__segment {
+      display: flex;
+      flex-direction: column;
+
+      .segment__wrap {
+        display: flex;
+        flex-direction: column;
+
+        .segment__item {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          border-top: 1px solid $gray_input;
+          margin-bottom: 20px;
+          padding-top: 7px;
+
+          white-space: nowrap;
+
+          .left {
+            display: flex;
+            flex-direction: row;
+
+            .item__number {
+              @include text_style("Montserrat", 700, 8px, 1.1, $primary);
+              text-transform: uppercase;
+              padding-right: 18px;
+            }
+
+            .item__content {
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+
+              .content__h {
+                @include text_style("Roboto", 500, 18px, 1.1, $primary);
+                font-variant: small-caps;
+                margin: 0;
+                a {
+                  color: $primary;
+                  text-decoration: none;
+                }
+              }
+
+              .content__text {
+                @include text_style("Roboto", 400, 15px, 1.1, $gray_two);
+                font-variant: small-caps;
+                margin: 0;
+              }
+            }
+          }
+
+          .right {
+            @include text_style("Roboto", 500, 18px, 1.1, $primary);
+            font-variant: small-caps;
+            a {
+              color: $primary;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*------------ADAPTIVE VERSION (START)------------*/
+
+@media screen and (min-width: 1566px) and (max-width: 1690px) {
+  .thirdPage__wrap .content__wrap {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1390px) and (max-width: 1565px) {
+  .thirdPage__wrap .content__wrap {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1260px) and (max-width: 1389px) {
+  .thirdPage__wrap .content__wrap {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1259px) {
+  .thirdPage__wrap .content__wrap {
+    width: 50%;
+  }
+}
+/*------------ADAPTIVE VERSION FOR TABLET(START)------------*/
+@media (max-width: 1199px) {
+  .thirdPage__wrap {
+    border-radius: 16px;
+    height: 170vh;
+    padding: 20px;
+    margin-bottom: 70px;
+
+    background-image: url("../../../assets/images/map_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    .content__wrap {
+      width: 100%;
+      .thirdPage__content .thirdPage__title {
+        @include text_style("Montserrat", 600, 32px, 0.9, $primary);
+
+        max-width: 400px;
+        padding-bottom: 70px;
+      }
+      .thirdPage__content .cities {
+        width: 60%;
+      }
+    }
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR TABLET(END)------------*/
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(START)------------*/
+@media (max-width: 767px) {
+  .thirdPage__wrap {
+    border-radius: 8px;
+    height: auto;
+    padding: 14px 10px 10px 10px;
+    // background-position: 70% 25%;
+
+    background-image: none;
+
+    .content__wrap {
+      width: 100%;
+      .thirdPage__content .thirdPage__title {
+        @include text_style("Montserrat", 600, 23px, 0.9, $primary);
+
+        max-width: 280px;
+        padding-bottom: 40px;
+      }
+      .thirdPage__content {
+        margin-bottom: 131px;
+
+        .cities {
+          width: 100%;
+          justify-content: space-between;
+        }
+      }
+      .thirdPage__segment .segment__wrap .segment__item {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media (max-width: 492px) {
+  .thirdPage__wrap
+    .content__wrap
+    .thirdPage__segment
+    .segment__wrap
+    .segment__item
+    .left
+    .item__content
+    .content__text {
+    padding-bottom: 11px;
+  }
+  .thirdPage__wrap {
+    .content__wrap {
+      .thirdPage__segment .segment__wrap .segment__item {
+        .item__end {
+          margin: 0px auto 20px 28px;
+        }
+      }
+    }
+  }
+  .thirdPage__wrap
+    .content__wrap
+    .thirdPage__segment
+    .segment__wrap
+    .segment__item
+    .left
+    .item__content
+    .content__h {
+    font-size: 15px;
+  }
+  .thirdPage__wrap
+    .content__wrap
+    .thirdPage__segment
+    .segment__wrap
+    .segment__item
+    .right {
+    font-size: 15px;
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(END)------------*/
+/*------------ADAPTIVE VERSION(END)------------*/

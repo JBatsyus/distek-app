@@ -1,0 +1,136 @@
+@import "../../../../assets/styles/variables.scss";
+@import "../../../../assets/styles/mixins.scss";
+
+@import "../../../NavBody/template.scss";
+
+.card__wrapFs {
+  height: 36vw;
+
+  .card__bgi {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-repeat: no-repeat;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    background-size: cover;
+
+    background-position: bottom;
+
+    .header__cd {
+      display: flex;
+      border-top-right-radius: 10px;
+      background-color: transparent;
+
+      .btn {
+        border-bottom-right-radius: 10px;
+        width: 150px;
+        height: 60px;
+        background-color: $body;
+        padding: 10px;
+        position: relative;
+      }
+
+      .header__radius {
+        width: 100%;
+        @include border_radius_left_top();
+      }
+    }
+
+    .border__wrap {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .border-left {
+        height: 50%;
+        width: 10%;
+        @include border_radius_left_top();
+      }
+
+      .card__body {
+        display: flex;
+        align-items: flex-end;
+        height: 17vw;
+        border-radius: 0px 0px 10px 10px;
+        @include background-color-text();
+        padding: 30px;
+
+        .content {
+          display: flex;
+          flex-direction: column;
+
+          .card__text {
+            @include text_style("Roboto", 400, 18px, 0.9, $white);
+
+            height: 70px;
+            margin-bottom: 35px;
+            text-align: left;
+          }
+
+          a {
+            text-decoration: none;
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*------------ADAPTIVE VERSION (START)------------*/
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .card__wrapFs .card__bgi .card__body {
+    height: 18vw;
+  }
+  .card__wrapFs .card__bgi .border__wrap .card__body .content .card__text {
+    @include text_style("Roboto", 400, 17px, 0.9, $white);
+    margin-bottom: 40px;
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR TABLET(START)------------*/
+@media (max-width: 1199px) {
+  .card__wrapFs {
+    height: 70vw;
+    width: 49%;
+
+    .card__bgi .border__wrap .card__body {
+      height: 30vw;
+      padding: 20px;
+
+      .content .card__text {
+        @include text_style("Roboto", 400, 16px, 1.03, $white);
+
+        height: 84px;
+        margin-bottom: 30px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR TABLET(END)------------*/
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(START)------------*/
+@media (max-width: 767px) {
+  .card__wrapFs {
+    height: 139vw;
+    width: 100%;
+
+    .card__bgi .border__wrap .card__body {
+      height: 69vw;
+      padding: 20px;
+    }
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(END)------------*/
+/*------------ADAPTIVE VERSION(END)------------*/

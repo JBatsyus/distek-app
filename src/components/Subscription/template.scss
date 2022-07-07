@@ -1,0 +1,140 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.news__wrap {
+  background: $white;
+  border-radius: 20px;
+  padding: 32px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  .h4 {
+    @include text_style("Montserrat", 600, 20px, 1, $gray_two);
+
+    text-transform: lowercase;
+    text-align: left;
+  }
+
+  .input__wrap {
+    margin-top: 14px;
+
+    position: relative;
+
+    .news {
+      width: 100%;
+
+      padding: 16px 20px;
+      border: 1px solid $gray_input;
+      border-radius: 10px;
+
+      outline: none;
+
+      &::placeholder {
+        @include text_style("Roboto", 500, 17px, 1, $gray_input);
+        font-variant: small-caps;
+      }
+    }
+
+    .btn__wrap {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+
+      padding: 10px 10px;
+
+      z-index: 2;
+      display: flex;
+      align-items: center;
+
+      p {
+        @include text_style("Montserrat", 500, 15px, 1, $gray_two);
+        margin-right: 12px;
+      }
+
+      button {
+        @include reset_style_btn();
+        background-color: transparent;
+      }
+    }
+  }
+
+  .agreement {
+    @include text_style("Roboto", 400, 12px, 1, $gray_two);
+
+    text-transform: lowercase;
+    text-align: left;
+
+    margin-top: 12px;
+
+    a {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}
+
+/*------------ADAPTIVE VERSION (START)------------*/
+
+/*------------ADAPTIVE VERSION FOR TABLET(START)------------*/
+@media (max-width: 1199px) {
+  .news__wrap {
+    padding: 32px 20px 40px 20px;
+    border-radius: 16px;
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR TABLET(END)------------*/
+
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(START)------------*/
+@media (max-width: 767px) {
+  .news__wrap {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    .h4 {
+      @include text_style("Montserrat", 600, 16px, 1, $gray_two);
+    }
+
+    .input__wrap {
+      margin-top: 10px;
+
+      .news {
+        padding: 11px 10px;
+      }
+
+      .btn__wrap {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+
+        padding: 10px 10px;
+
+        z-index: 2;
+        display: flex;
+        align-items: center;
+
+        p {
+          display: none;
+        }
+
+        button {
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+
+    .agreement {
+      margin-top: 10px;
+    }
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(END)------------*/
+/*------------ADAPTIVE VERSION(END)------------*/

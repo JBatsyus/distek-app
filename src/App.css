@@ -1,0 +1,42 @@
+/* @import "../src/assets/styles/variables.scss"; */
+@import "./assets/fonts/fonts.css";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.App {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #e5e5e5;
+  margin: 0;
+  /* padding: 24px 40px; */
+  padding: 0 40px 24px 40px;
+}
+
+html {
+  height: 100%;
+  background-color: #e5e5e5;
+}
+body {
+  height: 100%;
+  background-color: #e5e5e5;
+}
+#root {
+  height: 100%;
+}
+
+@media (max-width: 1199px) {
+  .App {
+    padding: 0 10px 40px 10px;
+  }
+}
+@media (max-width: 768px) {
+  .App {
+    padding: 0 10px 24px 10px;
+  }
+}

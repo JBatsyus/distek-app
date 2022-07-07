@@ -1,0 +1,31 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.nav__item {
+  @include text_style("Roboto", 500, 20px, 0.9, $primary);
+  text-decoration: none;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  // outline: 1px solid #1f9491;
+  margin-left: 80px;
+  display: flex;
+}
+.img {
+  padding-left: 7px;
+}
+
+/*------------ADAPTIVE VERSION (START)------------*/
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .nav__item {
+    margin-left: 45px;
+  }
+}
+/*------------ADAPTIVE VERSION FOR TABLET(START)------------*/
+@media (max-width: 1199px) {
+  .nav__item {
+    display: none;
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR TABLET(END)------------*/
+/*------------ADAPTIVE VERSION(END)------------*/

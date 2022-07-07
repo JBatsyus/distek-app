@@ -1,0 +1,71 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.btn__one {
+  padding: 21px 59px;
+  white-space: nowrap;
+  border-radius: 10px;
+  @include btn_gradient();
+  @include text_style("Roboto", 500, 17px, 1, $white);
+  font-variant: small-caps;
+
+  @include reset_style_btn();
+}
+.btn__call {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 8px 24px;
+  white-space: nowrap;
+  border-radius: 6px;
+  @include btn_gradient();
+  @include text_style("Roboto", 500, 15px, 1, $white);
+  font-variant: small-caps;
+
+  @include reset_style_btn();
+}
+
+.btn__gray {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 12px 23px;
+  white-space: nowrap;
+  border: 1px solid $gray_input;
+  background-color: transparent;
+  background-color: $body;
+  border-radius: 10px;
+  @include text_style("Roboto", 500, 15px, 0.9, $gray_two);
+  outline: none;
+  cursor: pointer;
+}
+
+.btn__social {
+  background: $white;
+  border-radius: 10px;
+  padding: 18px;
+  margin-left: 5px;
+  margin-right: 5px;
+  @include reset_style_btn();
+}
+
+/*------------ADAPTIVE VERSION FOR TABLET(START)------------*/
+@media (max-width: 1199px) {
+  .btn__one {
+    padding: 11px 30px 10px 30px;
+  }
+}
+/*------------ADAPTIVE VERSION FOR TABLET(END)------------*/
+
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(START)------------*/
+@media (max-width: 767px) {
+  .btn__gray {
+    border-radius: 8px;
+  }
+}
+@media (max-width: 414px) {
+  .btn__one {
+    @include text_style("Roboto", 500, 11px, 1, $white);
+  }
+}
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(END)------------*/

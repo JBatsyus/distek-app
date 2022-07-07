@@ -1,0 +1,143 @@
+@import "../../../assets/styles/variables.scss";
+@import "../../../assets/styles/mixins.scss";
+
+.fourthPage__wrap {
+  height: auto;
+  margin-bottom: 50px;
+
+  .fourthPage__title {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+
+    .fourthPage__title-left {
+      background: $white;
+      border-radius: 20px;
+      padding: 25px 33px 76px 37px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      width: 50%;
+
+      .fourthPage__title-up {
+        @include text_style("Montserrat", 600, 40px, 0.9, $primary);
+        letter-spacing: -0.01em;
+        margin-bottom: 15px;
+      }
+      .title__bottom {
+        @include text_style("Roboto", 400, 18px, 1.02, $gray);
+
+        font-variant: small-caps;
+        max-width: 350px;
+      }
+    }
+    .fourthPage__title-right {
+      width: 50%;
+    }
+  }
+
+  .container__four {
+    margin-top: 15px;
+    column-gap: 16px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
+// .container__sp {
+//   margin-top: 15px;
+//   gap: 13px;
+//   // display: flex;
+//   // flex-direction: row;
+
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   justify-content: space-between;
+//   align-items: stretch;
+//   outline: 1px solid thistle;
+// }
+
+/*------------ADAPTIVE VERSION (START)------------*/
+
+// @media screen and (min-width: 1200px) and (max-width: 1439px) {
+// }
+
+/*------------ADAPTIVE VERSION FOR TABLET(START)------------*/
+@media (max-width: 1199px) {
+  .fourthPage__wrap {
+    margin-bottom: 70px;
+  }
+  .fourthPage__wrap {
+    .fourthPage__title {
+      flex-direction: column;
+      gap: 10px;
+      .fourthPage__title-left {
+        border-radius: 16px;
+        width: 100%;
+        padding: 20px 20px 55px 32px;
+        .fourthPage__title-up {
+          @include text_style("Montserrat", 600, 32px, 0.9, $primary);
+          margin-bottom: 10px;
+        }
+        .title__bottom {
+          @include text_style("Roboto", 400, 18px, 1.02, $gray);
+          max-width: 340px;
+        }
+      }
+      .fourthPage__title-right {
+        width: 100%;
+      }
+    }
+
+    .container__four {
+      gap: 10px;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+/*------------ADAPTIVE VERSION FOR TABLET(END)------------*/
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(START)------------*/
+@media (max-width: 767px) {
+  .fourthPage__wrap {
+    .fourthPage__title {
+      flex-direction: column;
+
+      gap: 0px;
+      .fourthPage__title-left {
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        padding: 20px 20px 120px 32px;
+        .fourthPage__title-up {
+          @include text_style("Montserrat", 600, 23px, 0.9, $primary);
+          margin-bottom: 10px;
+        }
+        .title__bottom {
+          border-radius: 0px;
+        }
+      }
+      .fourthPage__title-right {
+        width: 100%;
+      }
+    }
+    .container__four {
+      column-gap: 10px;
+
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(END)------------*/
+/*------------ADAPTIVE VERSION(END)------------*/

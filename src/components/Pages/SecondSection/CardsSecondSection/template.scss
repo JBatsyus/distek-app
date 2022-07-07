@@ -1,0 +1,298 @@
+@import "../../../../assets/styles/variables.scss";
+@import "../../../../assets/styles/mixins.scss";
+@import "../../../NavBody/template.scss";
+
+.card__headerSp {
+  display: flex;
+  background-color: $white;
+  border-top-right-radius: 20px;
+  background-color: transparent;
+
+  .header-leftSp {
+    padding: 38px 40px;
+    background-color: $body;
+    position: relative;
+  }
+
+  .header-leftSp:before {
+    @include card_corner();
+    @include card_corner_before();
+  }
+
+  .header-leftSp:after {
+    @include card_corner();
+    @include card_corner_after();
+  }
+
+  .header-rightSp {
+    background-color: $white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 26px 43px 0px 33px;
+
+    width: 100%;
+  }
+
+  .header-rightSp p {
+    @include text_style("Montserrat", 600, 28px, 1.1, $primary);
+
+    text-align: left;
+    text-transform: lowercase;
+    margin: 0px;
+    max-width: 323px;
+  }
+
+  .card__navSp-header {
+    display: none;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__bodySp {
+  padding: 81px 45px 40px 40px;
+
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  background-color: $white;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+
+  .card__boxSp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card__gifSp {
+    width: 252px;
+    height: 249px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .card__navSp {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 20px 20px 25px 36px;
+    height: 66px;
+  }
+
+  .card__contentSp {
+    @include text_style("Roboto", 400, 18px, 1.2, $primary);
+
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    flex-direction: column;
+  }
+
+  .items__cardSp {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+
+    img {
+      margin-right: 20px;
+    }
+
+    div {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+/*------------ADAPTIVE VERSION (START)------------*/
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .card__headerSp .header-rightSp p {
+    @include text_style("Montserrat", 400, 25px, 0.9, $primary);
+
+    max-width: 300px;
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR TABLET(START)------------*/
+@media (max-width: 1199px) {
+  .card__headerSp {
+    border-top-right-radius: 16px;
+  }
+
+  .card__headerSp .header-leftSp {
+    padding: 20px 20px;
+  }
+  .card__headerSp .header-leftSp::before {
+    height: 16px;
+    border-top-left-radius: 16px;
+  }
+  .card__headerSp .header-leftSp::after {
+    height: 16px;
+
+    border-bottom-right-radius: 16px;
+  }
+  .card__headerSp .header-rightSp {
+    padding: 14px 20px 0px 38px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      @include text_style("Montserrat", 600, 25px, 1, $primary);
+    }
+
+    .card__navSp-header {
+      display: block;
+
+      .nv__body {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .secondPage__wrap .container__sp .col .card__bodySp {
+    padding: 0px 20px 30px 20px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    .card__boxSp {
+      .card__navSp {
+        display: none;
+      }
+
+      .card__gifSp {
+        margin: 57px auto 27px auto;
+      }
+    }
+
+    .card__contentSp {
+      flex-direction: row;
+      flex-wrap: wrap;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .items__cardSp {
+        width: 49%;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR TABLET(END)------------*/
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(START)------------*/
+@media (max-width: 767px) {
+  .card__headerSp {
+    border-top-right-radius: 8px;
+  }
+  .card__headerSp .header-leftSp {
+    padding: 15px 15px;
+
+    img {
+      height: 15px;
+      width: 17px;
+    }
+  }
+  .card__headerSp .header-leftSp::before {
+    height: 8px;
+    border-top-left-radius: 8px;
+  }
+  .card__headerSp .header-leftSp::after {
+    height: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card__headerSp .header-rightSp {
+    padding: 10px 30px 0px 15px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+    .card__navSp-header {
+      display: none;
+    }
+
+    p {
+      @include text_style("Montserrat", 600, 20px, 1, $primary);
+    }
+  }
+
+  .secondPage__wrap .container__sp .col .card__bodySp {
+    padding: 20px 10px 30px 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    .card__boxSp {
+      .card__navSp {
+        height: auto;
+        display: block;
+        order: 1;
+        margin: auto auto auto 48px;
+
+        .nv__body {
+          margin-bottom: 10px;
+        }
+      }
+
+      .card__gifSp {
+        order: 2;
+        margin-bottom: 50px;
+        width: 273px;
+        height: 225px;
+      }
+    }
+
+    .card__contentSp {
+      flex-direction: column;
+      text-align: justify;
+      @include text_style("Roboto", 400, 15px, 1.2, $primary);
+
+      .items__cardSp {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .card__headerSp .header-rightSp {
+    padding: 10px 30px 0px 15px;
+
+    p {
+      @include text_style("Montserrat", 600, 18px, 1, $primary);
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .secondPage__wrap
+    .container__sp
+    .col
+    .card__bodySp
+    .card__boxSp
+    .card__gifSp {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/*------------ADAPTIVE VERSION FOR MOBILE DEVICES(END)------------*/
+/*------------ADAPTIVE VERSION(END)------------*/
