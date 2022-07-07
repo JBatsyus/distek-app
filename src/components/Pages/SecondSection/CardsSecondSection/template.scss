@@ -34,7 +34,7 @@
   }
 
   .header-rightSp p {
-    @include text_style("Montserrat", 600, 28px, 1.1, $primary);
+    @include text_style("Montserrat", 600, 28px, 1.06, $primary);
 
     text-align: left;
     text-transform: lowercase;
@@ -154,7 +154,7 @@
     justify-content: space-between;
 
     p {
-      @include text_style("Montserrat", 600, 25px, 1, $primary);
+      @include text_style("Montserrat", 600, 25px, 1.06, $primary);
     }
 
     .card__navSp-header {
@@ -230,7 +230,7 @@
     }
 
     p {
-      @include text_style("Montserrat", 600, 20px, 1, $primary);
+      @include text_style("Montserrat", 600, 20px, 1.06, $primary);
     }
   }
 
@@ -254,7 +254,7 @@
 
       .card__gifSp {
         order: 2;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
         width: 273px;
         height: 225px;
       }

@@ -19,7 +19,7 @@
   white-space: nowrap;
   border-radius: 6px;
   @include btn_gradient();
-  @include text_style("Roboto", 500, 15px, 1, $white);
+  @include text_style("Roboto", 500, 15px, 1.06, $white);
   font-variant: small-caps;
 
   @include reset_style_btn();

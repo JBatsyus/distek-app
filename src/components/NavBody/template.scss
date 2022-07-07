@@ -12,7 +12,7 @@
     min-height: 28px;
   }
   .link {
-    @include text_style("Roboto", 500, 20px, 0.9, $blue);
+    @include text_style("Roboto", 500, 20px, 0.95, $blue);
 
     font-variant: small-caps;
     text-decoration: none;
@@ -44,7 +44,7 @@
   }
   .nv__body .link {
     padding-left: 8px;
-    @include text_style("Roboto", 500, 16px, 0.9, $blue);
+    @include text_style("Roboto", 500, 16px, 1.1, $blue);
   }
   .nv__body .link img {
     height: 16px;
@@ -67,7 +67,7 @@
   .nv__body .link {
     display: flex;
     padding-left: 8px;
-    @include text_style("Roboto", 500, 16px, 0.9, $blue);
+    @include text_style("Roboto", 500, 16px, 0.92, $blue);
   }
   .nv__body .link img {
     height: 16px;

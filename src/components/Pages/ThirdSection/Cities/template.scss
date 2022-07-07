@@ -4,7 +4,7 @@
 .city__content {
   display: flex;
   flex-direction: row;
-  @include text_style("Roboto", 400, 18px, 1.02, $primary);
+  @include text_style("Roboto", 400, 18px, 1.2, $primary);
   display: flex;
   flex-direction: column;
   width: 50%;

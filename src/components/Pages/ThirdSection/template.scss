@@ -28,7 +28,7 @@
       text-align: left;
 
       .thirdPage__title {
-        @include text_style("Montserrat", 600, 45px, 1.02, $primary);
+        @include text_style("Montserrat", 600, 45px, 1.06, $primary);
 
         max-width: 750px;
         padding-bottom: 60px;
@@ -85,7 +85,7 @@
               }
 
               .content__text {
-                @include text_style("Roboto", 400, 15px, 1.1, $gray_two);
+                @include text_style("Roboto", 400, 15px, 1.06, $gray_two);
                 font-variant: small-caps;
                 margin: 0;
               }
@@ -149,7 +149,7 @@
         padding-bottom: 70px;
       }
       .thirdPage__content .cities {
-        width: 60%;
+        width: 70%;
       }
     }
   }
