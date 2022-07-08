@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/distek-app/static/css/main.5c8be717.css",
-    "main.js": "/distek-app/static/js/main.cbeb53f0.js",
+    "main.css": "/distek-app/static/css/main.6501986b.css",
+    "main.js": "/distek-app/static/js/main.fa17761d.js",
     "static/js/787.f43b336b.chunk.js": "/distek-app/static/js/787.f43b336b.chunk.js",
     "static/media/main_gif.gif": "/distek-app/static/media/main_gif.89b314a8cf135b446874.gif",
     "static/media/main_gif_tablet.gif": "/distek-app/static/media/main_gif_tablet.453169f44b552eeaa7c6.gif",
@@ -13,7 +13,6 @@
     "static/media/Montserrat-Regular.eot": "/distek-app/static/media/Montserrat-Regular.66eda0b7eb59b754aa6d.eot",
     "static/media/Montserrat-Medium.ttf": "/distek-app/static/media/Montserrat-Medium.b3302f2f794dd3491eed.ttf",
     "static/media/Montserrat-Regular.ttf": "/distek-app/static/media/Montserrat-Regular.1df6dbd2b3efe7e8bbd5.ttf",
-    "static/media/card__b.png": "/distek-app/static/media/card__b.92abc6afccf9fa50f71f.png",
     "static/media/Roboto-Medium.eot": "/distek-app/static/media/Roboto-Medium.b1f960b6f93ad75f4922.eot",
     "static/media/Roboto-Medium.ttf": "/distek-app/static/media/Roboto-Medium.6b3a89a3981b8dca14b4.ttf",
     "static/media/Roboto-Regular.eot": "/distek-app/static/media/Roboto-Regular.67168c66abc3f57c79f4.eot",
@@ -46,6 +45,8 @@
     "static/media/vkontakte.svg": "/distek-app/static/media/vkontakte.df9574b39a9a0f6fe59aeb18a3d2b1f4.svg",
     "static/media/instagram.svg": "/distek-app/static/media/instagram.430335574ddb68c518b2aad3ef13d100.svg",
     "static/media/email.svg": "/distek-app/static/media/email.b2ee55790e242c98e2a958ba8b49c0d0.svg",
+    "static/media/gradi_main.svg": "/distek-app/static/media/gradi_main.f6c03983d47e0bae2c5ec34d12ddd3d8.svg",
+    "static/media/gradi.svg": "/distek-app/static/media/gradi.67a593a8b690ae7f72e01c29cb35e27e.svg",
     "static/media/youtube.svg": "/distek-app/static/media/youtube.480ab1ff896a94a5649782fba087ae09.svg",
     "static/media/facebook.svg": "/distek-app/static/media/facebook.fb5c391e3fbf5b999a9b5eb9c466d59f.svg",
     "static/media/tekla.svg": "/distek-app/static/media/tekla.7d05033da3fdbe78314e8faf667d9159.svg",
@@ -58,12 +59,12 @@
     "static/media/three.svg": "/distek-app/static/media/three.3c66933d4da3343b816317d4bc605ea2.svg",
     "static/media/two.svg": "/distek-app/static/media/two.f69e58166590b2f3d4ef4ab053a3fa79.svg",
     "static/media/one.svg": "/distek-app/static/media/one.da174edfca1850300ee387e01b96d219.svg",
-    "main.5c8be717.css.map": "/distek-app/static/css/main.5c8be717.css.map",
-    "main.cbeb53f0.js.map": "/distek-app/static/js/main.cbeb53f0.js.map",
+    "main.6501986b.css.map": "/distek-app/static/css/main.6501986b.css.map",
+    "main.fa17761d.js.map": "/distek-app/static/js/main.fa17761d.js.map",
     "787.f43b336b.chunk.js.map": "/distek-app/static/js/787.f43b336b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c8be717.css",
-    "static/js/main.cbeb53f0.js"
+    "static/css/main.6501986b.css",
+    "static/js/main.fa17761d.js"
   ]
 }
