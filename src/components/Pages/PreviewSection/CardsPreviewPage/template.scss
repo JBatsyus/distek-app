@@ -563,7 +563,8 @@
 
   .screen__wrap .screen__content .card__box .card__header .header-right {
     padding: 10px 38px 0 15px;
-    border-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 
     p {
       @include text_style("Montserrat", 600, 20px, 1.06, $primary);
@@ -665,6 +666,11 @@
   .screen__wrap .screen__content .cardMain__box .cardMain__body .gif-tablet {
     width: auto;
     height: 286px;
+  }
+}
+@media (max-width: 350px) {
+  .screen__wrap .screen__content .cardMain__box .cardMain__body .block_info {
+    margin-top: 20px;
   }
 }
 

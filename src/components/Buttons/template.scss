@@ -72,6 +72,7 @@
   }
   .btn__one {
     padding: 11px 30px;
+    border-radius: 6px;
   }
   .btn__call {
     border-radius: 6px;
@@ -87,7 +88,6 @@
 @media (max-width: 375px) {
   .btn__one {
     padding: 11px 10px;
-    border-radius: 6px;
   }
 }
 /*------------ADAPTIVE VERSION FOR MOBILE DEVICES(END)------------*/
