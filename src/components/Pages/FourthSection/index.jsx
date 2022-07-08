@@ -7,7 +7,7 @@ import { cards } from "../../Data/cards.js";
 
 const FourthSection = () => {
   return (
-    <section className="fourthPage__wrap">
+    <section className="fourthPage__wrap" id="news">
       <div className="fourthPage__title">
         <div className="fourthPage__title-left">
           <div className="fourthPage__title-up">Новости</div>

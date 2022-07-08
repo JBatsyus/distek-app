@@ -7,7 +7,7 @@ import Segment from "./Segment.jsx";
 
 const ThirdSection = () => {
   return (
-    <section className="thirdPage__wrap">
+    <section className="thirdPage__wrap" id="about">
       <div className="content__wrap">
         <div className="thirdPage__content">
           <div className="thirdPage__title">

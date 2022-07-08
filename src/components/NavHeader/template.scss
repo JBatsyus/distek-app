@@ -5,8 +5,7 @@
   @include text_style("Roboto", 500, 20px, 0.85, $primary);
   text-decoration: none;
   font-variant: small-caps;
-
-  // outline: 1px solid #1f9491;
+  cursor: pointer;
   margin-left: 80px;
   display: flex;
 }

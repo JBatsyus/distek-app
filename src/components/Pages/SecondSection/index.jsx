@@ -4,7 +4,7 @@ import { cardsContent } from "../../Data/cardsSecondPade";
 
 const SecondSection = () => {
   return (
-    <section className="secondPage__wrap">
+    <section className="secondPage__wrap" id="programm">
       <div className="secondPage__title">
         <div className="secondPage__title-up">
           {" "}

@@ -2,16 +2,16 @@ export const naviHead = [
   {
     id: 0,
     text: "программное обеспечение",
-    href: "javascript:void(0)",
+    href: "programm",
   },
   {
     id: 1,
     text: "новости",
-    href: "javascript:void(0)",
+    href: "news",
   },
   {
     id: 2,
     text: "о нас",
-    href: "javascript:void(0)",
+    href: "about",
   },
 ];
