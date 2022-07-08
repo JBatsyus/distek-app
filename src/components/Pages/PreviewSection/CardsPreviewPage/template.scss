@@ -117,7 +117,7 @@
     @include reset_cardGradient_btn();
   }
 
-  .card__btn-adptv button {
+  .card__btn-adptv {
     display: none;
   }
 }
@@ -291,11 +291,11 @@
   }
 
   .cardMain__box .cardMain__header .headerMain-right p {
-    @include text_style("Montserrat", 400, 25px, 0.9, $primary);
+    @include text_style("Montserrat", 600, 22px, 1.06, $primary);
     line-height: 1.5;
   }
   .card__box .card__header .header-right p {
-    @include text_style("Montserrat", 400, 25px, 0.9, $primary);
+    @include text_style("Montserrat", 600, 22px, 1.06, $primary);
     line-height: 1.5;
   }
 }

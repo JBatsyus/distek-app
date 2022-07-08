@@ -4,11 +4,11 @@ const ButtonSocial = props => {
   const { href, src, alt } = props;
   return (
     <button className="btn__social">
-      <div className="btns__wrap">
-        <a href={href}>
-          <img src={src} alt={alt} className="icon" />
-        </a>
-      </div>
+      {/* <div className="btns__wrap"> */}
+      <a className="btns__wrap" href={href}>
+        <img src={src} alt={alt} className="icon" />
+      </a>
+      {/* </div> */}
     </button>
   );
 };
