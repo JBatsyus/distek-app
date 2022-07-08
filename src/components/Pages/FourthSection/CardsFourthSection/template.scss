@@ -66,11 +66,13 @@
         .content {
           display: flex;
           flex-direction: column;
+          height: auto;
+          justify-content: space-between;
 
           .card__text {
             @include text_style("Roboto", 400, 18px, 1.2, $white);
 
-            height: 70px;
+            height: 100px;
             margin-bottom: 35px;
             text-align: left;
           }
@@ -88,12 +90,11 @@
 /*------------ADAPTIVE VERSION (START)------------*/
 
 @media screen and (min-width: 1200px) and (max-width: 1439px) {
-  .card__wrapFs .card__bgi .card__body {
-    height: 18vw;
+  .card__wrapFs .card__bgi .border__wrap .card__body {
+    height: 25vw;
   }
   .card__wrapFs .card__bgi .border__wrap .card__body .content .card__text {
-    @include text_style("Roboto", 400, 17px, 0.9, $white);
-    margin-bottom: 40px;
+    @include text_style("Roboto", 400, 17px, 1.06, $white);
   }
 }
 

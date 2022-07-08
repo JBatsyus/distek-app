@@ -22,6 +22,7 @@ const CardsFourthSection = props => {
           <div className="card__body">
             <div className="content">
               <div className="card__text">{text}</div>
+
               <Detail>
                 подробнее на <a>distek.tekla.ru</a>
               </Detail>
