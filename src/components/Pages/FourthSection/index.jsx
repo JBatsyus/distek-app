@@ -2,8 +2,6 @@ import "./template.scss";
 import Subscription from "../../Subscription/index.jsx";
 import CardsFourthSection from "./CardsFourthSection/index.jsx";
 import { cards } from "../../Data/cards.js";
-// import ButtonGray from "../Buttons/ButtonGray.jsx";
-// import card_one from "../../assets/images/card_one.png";
 
 const FourthSection = () => {
   return (

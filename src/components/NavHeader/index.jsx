@@ -5,10 +5,6 @@ import { Link } from "react-scroll";
 const NavHeader = props => {
   const { href, text } = props;
   return (
-    // <a href={href} className="nav__item">
-    //   {text}
-    //   <img src={arrow} alt="вниз" className="img" />
-    // </a>
     <Link
       activeClass="yes"
       to={href}
