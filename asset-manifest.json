@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/distek-app/static/css/main.c22f5309.css",
+    "main.css": "/distek-app/static/css/main.7df7b405.css",
     "main.js": "/distek-app/static/js/main.6398c636.js",
     "static/js/787.f43b336b.chunk.js": "/distek-app/static/js/787.f43b336b.chunk.js",
     "static/media/main_gif.gif": "/distek-app/static/media/main_gif.89b314a8cf135b446874.gif",
@@ -59,12 +59,12 @@
     "static/media/three.svg": "/distek-app/static/media/three.3c66933d4da3343b816317d4bc605ea2.svg",
     "static/media/two.svg": "/distek-app/static/media/two.f69e58166590b2f3d4ef4ab053a3fa79.svg",
     "static/media/one.svg": "/distek-app/static/media/one.da174edfca1850300ee387e01b96d219.svg",
-    "main.c22f5309.css.map": "/distek-app/static/css/main.c22f5309.css.map",
+    "main.7df7b405.css.map": "/distek-app/static/css/main.7df7b405.css.map",
     "main.6398c636.js.map": "/distek-app/static/js/main.6398c636.js.map",
     "787.f43b336b.chunk.js.map": "/distek-app/static/js/787.f43b336b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c22f5309.css",
+    "static/css/main.7df7b405.css",
     "static/js/main.6398c636.js"
   ]
 }
