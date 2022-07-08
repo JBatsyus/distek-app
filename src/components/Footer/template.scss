@@ -271,8 +271,9 @@ footer {
       .btn__one {
         order: 2;
 
-        padding: 11px 30px 11px 22px;
-        @include text_style("Roboto", 500, 17px, 1, $white);
+        border-radius: 8px;
+
+        padding: 11px 10px;
       }
 
       .footer__icons {
@@ -324,15 +325,23 @@ footer {
 }
 
 @media (max-width: 380px) {
-  footer .footer__contacts .contacts-right .info .number {
-    @include text_style("Roboto", 500, 11px, 0.9, $blue);
-    padding-left: 10px;
-    padding-right: 10px;
-    white-space: nowrap;
+  footer .footer__contacts .contacts-right .info {
+    .town {
+      padding-right: 5px;
+    }
+    .number {
+      @include text_style("Roboto", 500, 13px, 0.9, $blue);
+      padding-left: 5px;
+      padding-right: 5px;
+      white-space: nowrap;
+    }
+    .email {
+      padding-left: 5px;
+    }
   }
   footer .footer__contacts .btn_wrap .btn__one {
-    padding: 11px 16px;
-    @include text_style("Roboto", 500, 11px, 1, $white);
+    font-size: 13px;
+    padding: 11px 5px;
   }
 }
 

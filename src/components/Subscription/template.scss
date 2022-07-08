@@ -27,11 +27,11 @@
       padding: 16px 10px 20px 20px;
       border: 1px solid $gray_input;
       border-radius: 10px;
-
+      @include text_style("Roboto", 500, 17px, 1.06, $gray_input);
       outline: none;
 
       &::placeholder {
-        @include text_style("Roboto", 500, 17px, 1, $gray_input);
+        @include text_style("Roboto", 500, 17px, 1.06, $gray_input);
         font-variant: small-caps;
       }
     }
@@ -96,7 +96,7 @@
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     .h4 {
-      @include text_style("Montserrat", 600, 16px, 1, $gray_two);
+      @include text_style("Montserrat", 600, 16px, 1.06, $gray_two);
     }
 
     .input__wrap {
@@ -104,6 +104,7 @@
 
       .news {
         padding: 11px 10px;
+        border-radius: 8px;
       }
 
       .btn__wrap {

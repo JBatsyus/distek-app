@@ -6,7 +6,7 @@
   white-space: nowrap;
   border-radius: 10px;
   @include btn_gradient();
-  @include text_style("Roboto", 500, 17px, 1, $white);
+  @include text_style("Roboto", 500, 17px, 1.06, $white);
   font-variant: small-caps;
 
   @include reset_style_btn();
@@ -47,6 +47,9 @@
   margin-left: 5px;
   margin-right: 5px;
   @include reset_style_btn();
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .btns__wrap {
     width: 24px;
     height: auto;
@@ -57,6 +60,7 @@
 @media (max-width: 1199px) {
   .btn__one {
     padding: 11px 30px 10px 30px;
+    border-radius: 8px;
   }
 }
 /*------------ADAPTIVE VERSION FOR TABLET(END)------------*/
@@ -66,10 +70,24 @@
   .btn__gray {
     border-radius: 8px;
   }
-}
-@media (max-width: 414px) {
   .btn__one {
-    @include text_style("Roboto", 500, 11px, 1, $white);
+    padding: 11px 30px;
+  }
+  .btn__call {
+    border-radius: 6px;
+  }
+  .btn__social {
+    border-radius: 6px;
+    .btns__wrap {
+      width: 18px;
+      height: 23px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .btn__one {
+    padding: 11px 10px;
+    border-radius: 6px;
   }
 }
 /*------------ADAPTIVE VERSION FOR MOBILE DEVICES(END)------------*/
