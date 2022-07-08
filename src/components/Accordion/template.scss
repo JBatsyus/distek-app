@@ -39,6 +39,10 @@
   font-variant: small-caps;
   text-decoration: none;
   align-items: flex-end;
+  transition: 0.4s ease-in-out;
+  &:hover {
+    color: $blue;
+  }
 }
 .accordion-btn {
   height: 20px;
@@ -63,12 +67,11 @@
   padding-left: 45%;
   @include text_style("Roboto", 500, 15px, 1.1, $primary);
 
-  // visibility: hidden;
   height: 0;
   overflow: hidden;
   height: 0;
 
-  transition: all 0.4s linear;
+  transition: all 0.4s ease-in-out;
   text-align: left;
 }
 .accordion-content.active {
