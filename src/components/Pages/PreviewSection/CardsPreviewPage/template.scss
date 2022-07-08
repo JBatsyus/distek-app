@@ -459,31 +459,14 @@
 /*------------ADAPTIVE VERSION FOR TABLET(END)------------*/
 /*------------ADAPTIVE VERSION FOR MOBILE DEVICES(START)------------*/
 @media (max-width: 767px) {
-  // .screen__wrap .screen__title {
-  //   padding: 10px 10px 1px 10px;
-
-  //   .title-up {
-  //     flex-direction: column;
-
-  //     .title__left {
-  //       @include text_style("Montserrat", 600, 27px, 1, $primary);
-  //       max-width: 350px;
-  //       margin-bottom: 15px;
-  //     }
-
-  //     .title__right {
-  //       @include text_style("Roboto", 500, 15px, 0.9, $gray);
-  //       max-width: 300px;
-  //       text-align: left;
-  //       margin: 0px 0px 80px 0px;
-  //     }
-  //   }
-  // }
   .card__box .card__header {
     border-radius: 8px;
   }
   .cardMain__box .cardMain__header .headerMain-left {
     padding: 15px 15px;
+    border-bottom-right-radius: 8px;
+
+    box-shadow: 4px 4px 8px 0px rgb(255, 255, 255);
 
     img {
       height: 15px;
@@ -496,7 +479,8 @@
   }
   .cardMain__box .cardMain__header .headerMain-left::after {
     height: 8px;
-
+    right: -6px;
+    bottom: -6px;
     border-bottom-right-radius: 8px;
   }
 
@@ -558,7 +542,9 @@
 
   .card__box .card__header .header-left {
     padding: 15px 15px;
+    border-bottom-right-radius: 8px;
 
+    box-shadow: 4px 4px 8px 0px rgb(255, 255, 255);
     img {
       height: 15px;
       width: 17px;
@@ -570,7 +556,8 @@
   }
   .card__box .card__header .header-left::after {
     height: 8px;
-
+    right: -6px;
+    bottom: -6px;
     border-bottom-right-radius: 8px;
   }
 

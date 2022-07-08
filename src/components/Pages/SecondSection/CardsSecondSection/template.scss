@@ -205,6 +205,9 @@
   }
   .card__headerSp .header-leftSp {
     padding: 15px 15px;
+    border-bottom-right-radius: 8px;
+
+    box-shadow: 4px 4px 8px 0px rgb(255, 255, 255);
 
     img {
       height: 15px;
@@ -212,12 +215,15 @@
     }
   }
   .card__headerSp .header-leftSp::before {
+    display: none;
     height: 8px;
     border-top-left-radius: 8px;
   }
   .card__headerSp .header-leftSp::after {
     height: 8px;
     border-bottom-right-radius: 8px;
+    right: -6px;
+    bottom: -6px;
   }
 
   .card__headerSp .header-rightSp {
