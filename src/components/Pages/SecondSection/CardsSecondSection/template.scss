@@ -120,7 +120,7 @@
 
 /*------------ADAPTIVE VERSION (START)------------*/
 
-@media screen and (min-width: 1200px) and (max-width: 1470px) {
+@media screen and (min-width: 1200px) and (max-width: 1540px) {
   .card__headerSp .header-rightSp p {
     @include text_style("Montserrat", 400, 25px, 0.9, $primary);
 
@@ -277,7 +277,7 @@
     padding: 10px 30px 0px 15px;
 
     p {
-      @include text_style("Montserrat", 600, 18px, 1, $primary);
+      @include text_style("Montserrat", 600, 20px, 1.06, $primary);
     }
   }
 }

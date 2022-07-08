@@ -459,26 +459,26 @@
 /*------------ADAPTIVE VERSION FOR TABLET(END)------------*/
 /*------------ADAPTIVE VERSION FOR MOBILE DEVICES(START)------------*/
 @media (max-width: 767px) {
-  .screen__wrap .screen__title {
-    padding: 10px 10px 1px 10px;
+  // .screen__wrap .screen__title {
+  //   padding: 10px 10px 1px 10px;
 
-    .title-up {
-      flex-direction: column;
+  //   .title-up {
+  //     flex-direction: column;
 
-      .title__left {
-        @include text_style("Montserrat", 600, 27px, 0.9, $primary);
-        max-width: 350px;
-        margin-bottom: 15px;
-      }
+  //     .title__left {
+  //       @include text_style("Montserrat", 600, 27px, 1, $primary);
+  //       max-width: 350px;
+  //       margin-bottom: 15px;
+  //     }
 
-      .title__right {
-        @include text_style("Roboto", 500, 15px, 0.9, $gray);
-        max-width: 300px;
-        text-align: left;
-        margin: 0px 0px 80px 0px;
-      }
-    }
-  }
+  //     .title__right {
+  //       @include text_style("Roboto", 500, 15px, 0.9, $gray);
+  //       max-width: 300px;
+  //       text-align: left;
+  //       margin: 0px 0px 80px 0px;
+  //     }
+  //   }
+  // }
   .card__box .card__header {
     border-radius: 8px;
   }
@@ -511,7 +511,7 @@
     border-top-left-radius: 8px;
 
     p {
-      @include text_style("Montserrat", 600, 20px, 0.9, $primary);
+      @include text_style("Montserrat", 600, 20px, 1.06, $primary);
       text-align: left;
       white-space: nowrap;
 
@@ -579,7 +579,7 @@
     border-radius: 8px;
 
     p {
-      @include text_style("Montserrat", 600, 20px, 0.9, $primary);
+      @include text_style("Montserrat", 600, 20px, 1.06, $primary);
     }
   }
 
@@ -671,7 +671,7 @@
     .cardMain__header
     .headerMain-right
     p {
-    @include text_style("Montserrat", 600, 16px, 1, $primary);
+    @include text_style("Montserrat", 600, 20px, 1.06, $primary);
     padding-bottom: 2px;
   }
 
