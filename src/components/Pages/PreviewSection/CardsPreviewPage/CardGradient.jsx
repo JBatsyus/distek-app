@@ -2,6 +2,7 @@ import "./template.scss";
 import two from "../../../../assets/images/two.svg";
 import btn_sectionone from "../../../../assets/images/btn_sectionone.svg";
 import arrow_btn_main from "../../../../assets/images/arrow_btn_main.svg";
+import gradi from "../../../../assets/images/gradi.svg";
 const CardGradient = () => {
   return (
     <div className="card__box">
@@ -14,6 +15,7 @@ const CardGradient = () => {
         </div>
       </div>
       <div className="card__body">
+        <img className="gradi" src={gradi}></img>
         <div className="card__btn-screen">
           <button>
             <img src={btn_sectionone} alt="" />

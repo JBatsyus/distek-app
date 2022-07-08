@@ -4,6 +4,7 @@ import main_gif from "../../../../assets/images/main_gif.gif";
 import main_gif_tablet from "../../../../assets/images/main_gif_tablet.gif";
 import email from "../../../../assets/images/email.svg";
 import Accordion from "../../../Accordion/index.jsx";
+import gradi_main from "../../../../assets/images/gradi_main.svg";
 import { items } from "../../../Data/accordion.js";
 
 const CardMain = () => {
@@ -22,6 +23,7 @@ const CardMain = () => {
         </div>
       </div>
       <div className="cardMain__body">
+        <img className="gradi_main" src={gradi_main}></img>
         <div className="block_info">
           <img src={email} alt="почта" />
           <a href="mailto: info@distek.ru"> info@distek.ru </a>
