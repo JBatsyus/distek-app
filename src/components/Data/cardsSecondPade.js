@@ -108,6 +108,7 @@ export const cardsContent = [
     alt: 3,
     header: "доступ к проектной",
     subHeader: " информации",
+    gif: main_gif_tablet,
     navi: [
       {
         id: 3,
