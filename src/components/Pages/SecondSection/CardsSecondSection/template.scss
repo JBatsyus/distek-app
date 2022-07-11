@@ -7,7 +7,6 @@
   background-color: $white;
   border-top-right-radius: 20px;
   background-color: transparent;
-  z-index: 1;
 
   .header-leftSp {
     padding: 38px 40px;
@@ -27,11 +26,13 @@
 
   .header-rightSp {
     background-color: $white;
+
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     padding: 26px 43px 0px 33px;
-
+    box-shadow: 0px 6px 0px 0px $white;
     width: 100%;
+    z-index: 99;
   }
 
   .header-rightSp p {
@@ -232,6 +233,8 @@
     padding: 10px 30px 0px 15px;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
+    display: flex;
+    flex-direction: column;
 
     .card__navSp-header {
       display: none;
@@ -283,6 +286,8 @@
 @media (max-width: 414px) {
   .card__headerSp .header-rightSp {
     padding: 10px 30px 0px 15px;
+    display: flex;
+    flex-direction: column;
 
     p {
       @include text_style("Montserrat", 600, 20px, 1.06, $primary);

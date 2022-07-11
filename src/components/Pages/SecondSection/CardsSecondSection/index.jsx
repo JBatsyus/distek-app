@@ -12,8 +12,10 @@ const CardSecondSection = props => {
           <img src={number} alt={alt} />
         </div>
         <div className="header-rightSp">
-          <p>{header}</p>
-          <p>{subHeader}</p>
+          <div className="tabl">
+            <p>{header}</p>
+            <p>{subHeader}</p>
+          </div>
           <div className="card__navSp-header">
             {navi.map(nav => (
               <NavBody key={nav.id} {...nav} />
