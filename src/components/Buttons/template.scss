@@ -5,12 +5,32 @@
   padding: 21px 59px;
   white-space: nowrap;
   border-radius: 10px;
-  @include btn_gradient();
+  background: linear-gradient(
+    50.48deg,
+    #30b3ed -33.78%,
+    #299ee2 6.62%,
+    #258bd7 47.26%,
+    #44a1e0 79.73%,
+    #51a8e3 111.74%
+  );
+
   @include text_style("Roboto", 500, 17px, 1.06, $white);
   font-variant: small-caps;
 
+  transition: 0.4s ease-in-out;
   @include reset_style_btn();
+  &:hover {
+    background: linear-gradient(
+      254.71deg,
+      #30b3ed 16.26%,
+      #299ee2 35.91%,
+      #258bd7 55.68%,
+      #44a1e0 71.47%,
+      #51a8e3 87.04%
+    );
+  }
 }
+
 .btn__call {
   display: flex;
   align-items: center;
@@ -18,11 +38,30 @@
   padding: 8px 24px;
   white-space: nowrap;
   border-radius: 6px;
-  @include btn_gradient();
+  background: linear-gradient(
+    50.48deg,
+    #30b3ed -33.78%,
+    #299ee2 6.62%,
+    #258bd7 47.26%,
+    #44a1e0 79.73%,
+    #51a8e3 111.74%
+  );
+  // @include btn_gradient();
   @include text_style("Roboto", 500, 15px, 1.06, $white);
   font-variant: small-caps;
 
   @include reset_style_btn();
+  transition: 0.4s ease-in-out;
+  &:hover {
+    background: linear-gradient(
+      254.71deg,
+      #30b3ed 16.26%,
+      #299ee2 35.91%,
+      #258bd7 55.68%,
+      #44a1e0 71.47%,
+      #51a8e3 87.04%
+    );
+  }
 }
 
 .btn__gray {

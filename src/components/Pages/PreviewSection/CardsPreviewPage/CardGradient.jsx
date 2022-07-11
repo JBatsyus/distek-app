@@ -3,6 +3,7 @@ import two from "../../../../assets/images/two.svg";
 import btn_sectionone from "../../../../assets/images/btn_sectionone.svg";
 import arrow_btn_main from "../../../../assets/images/arrow_btn_main.svg";
 import gradi from "../../../../assets/images/gradi.svg";
+import { Link } from "react-scroll";
 const CardGradient = () => {
   return (
     <div className="card__box">
@@ -31,7 +32,16 @@ const CardGradient = () => {
             Подберите программные продукты для моделирования конструкции и
             визуализации проектов
           </p>
-          <span>подробнее о решениях для ваших задач</span>
+          <Link
+            activeClass="yes"
+            to="programm"
+            spy={true}
+            smooth={true}
+            // offset={-70}
+            duration={500}
+          >
+            <span>подробнее о&nbsp;решениях для ваших задач</span>
+          </Link>
         </div>
       </div>
     </div>

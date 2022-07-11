@@ -24,7 +24,7 @@
     .news {
       width: 100%;
 
-      padding: 16px 10px 20px 20px;
+      padding: 16px 10px 16px 20px;
       border: 1px solid $gray_input;
       border-radius: 10px;
       @include text_style("Roboto", 500, 17px, 1.06, $gray_input);
@@ -49,20 +49,25 @@
       align-items: center;
 
       p {
-        @include text_style("Montserrat", 500, 15px, 1.06, $gray_two);
-        margin-right: 12px;
-        padding-bottom: 2px;
+        @include text_style("Roboto", 500, 15px, 1.06, $gray_two);
+        // margin-right: 12px;
+        margin: 7px auto;
+
+        font-variant: small-caps;
       }
 
       button {
+        height: 30px;
         @include reset_style_btn();
+        padding: 0;
+        margin-left: 12px;
         background-color: transparent;
       }
     }
   }
 
   .agreement {
-    @include text_style("Roboto", 400, 12px, 1.4, $gray_two);
+    @include text_style("Roboto", 400, 12px, 14px, $gray_two);
 
     text-transform: lowercase;
     text-align: left;

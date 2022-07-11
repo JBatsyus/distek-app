@@ -12,7 +12,7 @@
     min-height: 20px;
   }
   .link {
-    @include text_style("Montserrat", 400, 18px, 1, $primary);
+    @include text_style("Montserrat", 500, 18px, 1, $primary);
     font-variant: small-caps;
     text-decoration: none;
   }

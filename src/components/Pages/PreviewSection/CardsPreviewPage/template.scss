@@ -89,11 +89,13 @@
       text-align: left;
       width: 100%;
       min-width: 200px;
+      z-index: 1;
     }
 
     .card__content p {
       @include text_style("Roboto", 400, 18px, 1.02, $primary);
       margin-top: 0;
+      max-width: 325px;
     }
 
     .card__content span {
@@ -591,7 +593,7 @@
 
   .card__box .card__body .card__content p {
     font-size: 15px;
-    max-width: 252px;
+    // max-width: 252px;
   }
 
   .card__box .card__body .card__btn button {

@@ -9,12 +9,16 @@
 
   background-color: $white;
   border-radius: 10px;
-  padding: 10px 10px 10px 20px;
+
   .text {
     @include text_style("Roboto", 500, 15px, 1.06, $gray_two);
+    padding: 17px 10px 17px 20px;
   }
   .send {
     @include reset_style_btn();
+    padding: 0;
+    margin: 10px;
+    height: 30px;
     background-color: transparent;
   }
 }

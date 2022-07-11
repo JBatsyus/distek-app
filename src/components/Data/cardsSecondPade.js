@@ -14,7 +14,8 @@ export const cardsContent = [
     id: 0,
     number: one,
     alt: 1,
-    header: "эскизное 3d-моделирование",
+
+    header: "эскизное  3d-моделирование",
     gif: main_gif_tablet,
     navi: [
       {
