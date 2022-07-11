@@ -4,7 +4,7 @@ import check from "../../../../assets/images/check.svg";
 import NavBody from "../../../NavBody/index.jsx";
 
 const CardSecondSection = props => {
-  const { navi, number, alt, header, gif, items } = props;
+  const { navi, number, alt, header, subHeader, gif, items } = props;
   return (
     <div className="col">
       <div className="card__headerSp">
@@ -13,6 +13,7 @@ const CardSecondSection = props => {
         </div>
         <div className="header-rightSp">
           <p>{header}</p>
+          <p>{subHeader}</p>
           <div className="card__navSp-header">
             {navi.map(nav => (
               <NavBody key={nav.id} {...nav} />

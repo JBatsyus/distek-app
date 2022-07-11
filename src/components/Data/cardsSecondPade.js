@@ -15,7 +15,8 @@ export const cardsContent = [
     number: one,
     alt: 1,
 
-    header: "эскизное  3d-моделирование",
+    header: "эскизное",
+    subHeader: "3d-моделирование",
     gif: main_gif_tablet,
     navi: [
       {
@@ -55,7 +56,8 @@ export const cardsContent = [
     id: 2,
     number: two,
     alt: 2,
-    header: "моделирование и деталировка",
+    header: "моделирование",
+    subHeader: " и деталировка",
     gif: cardGif_3,
     navi: [
       {
@@ -104,8 +106,8 @@ export const cardsContent = [
     id: 3,
     number: three,
     alt: 3,
-    header: "доступ к проектной информации",
-    gif: main_gif_tablet,
+    header: "доступ к проектной",
+    subHeader: " информации",
     navi: [
       {
         id: 3,
